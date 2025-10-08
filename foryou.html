@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You :: Behance</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand d-flex align-items-center justify-content-center ms-2" href="#">
+                <img src="images/ri--behance-fill.svg" alt="" width="30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- Hamburger icon -->
+                <span class="navbar-toggler-icon open-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="width: 250px; transition: all 0.2s ease;">
+                <!-- Cancel / Close button inside -->
+                <button class="btn border-0 shadow-none me-auto mb-0 d-block d-lg-none" id="closeNavbar">
+                    &times;
+                </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center navItem">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold fs-6 mb-0" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold fs-6 mb-0" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold fs-6 mb-0" href="#">Client Work</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                            <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
+                        </a>
+                        <ul class="dropdown-menu drop-1"
+                            style="position: absolute; left: 0%; right: auto; transform: translateX(-20%);">
+                            <li><a class="dropdown-item fw-medium px-4 py-2" href="#"
+                                    style="font-size: 14px;">Overview</a></li>
+                            <li><a class="dropdown-item fw-medium px-4 py-2" href="#" style="font-size: 14px;">Career
+                                    Guides</a></li>
+                            <li><a class="dropdown-item fw-medium px-4 py-2" href="#"
+                                    style="font-size: 14px;">Commisioned Projects</a></li>
+                            <li><a class="dropdown-item fw-medium px-4 py-2" href="#" style="font-size: 14px;">Creative
+                                    Apprenticeship</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex">
+                        <hr class="mx-3" style="width: 1px; height: 20px; background-color: black;">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Hire
+                            <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
+                        </a>
+                        <ul class="dropdown-menu drop-1"
+                            style="width: 220px; position: absolute; left: 0%; right: auto; transform: translateX(-35%);">
+                            <li><a class="dropdown-item fw-medium py-2 d-flex gap-2" href="#" style="font-size: 14px;">
+                                    <img src="images/hugeicons--job-search.svg" alt="" width="15px"> Hiring
+                                    Dashboard</a></li>
+                            <li><a class="dropdown-item fw-medium py-2 d-flex gap-2" href="#" style="font-size: 14px;">
+                                    <img src="images/material-symbols-light--search.svg" alt="" width="15px">
+                                    Freelancers</a></li>
+                            <li><a class="dropdown-item fw-medium py-2 d-flex gap-2" href="#" style="font-size: 14px;">
+                                    <img src="images/akar-icons--info.svg" alt="" width="15px"> Hiring On Behance</a>
+                            </li>
+                            <li><a class="dropdown-item fw-medium py-2 d-flex gap-2" href="#" style="font-size: 14px;">
+                                    <img src="images/gala--add.svg" alt="" width="15px"> Create New Job</a></li>
+                            <li class="dropdown-item">
+                                <hr class="w-100 px-0">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#" style="font-size: 13px;">Logo Designers</a></li>
+                            <li><a class="dropdown-item py-2" href="#" style="font-size: 13px;">Brand Designers</a></li>
+                            <li><a class="dropdown-item py-2" href="#" style="font-size: 13px;">Website Designers</a>
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#" style="font-size: 13px;">Illustrators</a></li>
+                            <li><a class="dropdown-item py-2" href="#" style="font-size: 13px;">Social Media
+                                    Designers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown d-block d-lg-none">
+                        <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Share Work
+                            <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="px-2" style="font-size: 11px;">Create a project</li>
+                            <li class="mt-2 px-2" style="font-size: 11px;">Create a service</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown d-block d-lg-none">
+                        <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0 d-flex align-items-center d-lg-none gap-2"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="rounded-pill"
+                                style="width: 30px; height: 30px; background-image: url(images/imgi_1_230.png); background-size: cover; background-position: center;">
+                            </div>
+                            Me
+                            <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="py-2" style="display: flex; flex-direction: column; gap: 10px;">
+                                    <p class="ms-0 mb-0" style="font-size: 12px;">View as: Creative</p>
+                                    <div class="mx-0 d-flex justify-content-between">
+                                        <p class="fw-semibold mb-0 d-flex align-items-center gap-2"
+                                            style="font-size: 11px;">
+                                            <img src="images/iconoir--profile-circle.svg" alt="" width="20px">
+                                            Switch to Hirer
+                                        </p>
+                                        <img src="images/material-symbols-light--navigate-next.svg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0">
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Edit My Availability
+                                    </p>
+                                    <p class="ms-0 mb-0" style="font-size: 12px;">Freelance (Available Now)</p>
+                                    <hr class="w-100 m-0">
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Behance Profile</p>
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Adobe Portfolio</p>
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Stats & Insights</p>
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Manage Freelance
+                                        Projects</p>
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Purchases</p>
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Services</p>
+                                    <hr class="w-100 m-0">
+                                    <p class="mx-0 mb-0 fw-semibold d-flex align-items-center justify-content-between"
+                                        style="font-size: 11px;">Manage Adobe ID
+                                        <img src="images/fluent--share-20-regular.svg" alt="" width="15px">
+                                    </p>
+                                    <p class="mx-0 mb-0 fw-semibold d-flex align-items-center justify-content-between"
+                                        style="font-size: 11px;">Help
+                                        <img src="images/fluent--share-20-regular.svg" alt="" width="15px">
+                                    </p>
+                                    <hr class="w-100 m-0">
+                                    <p class="ms-0 mb-0 fw-semibold" style="font-size: 11px;">Sign Out</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown d-block d-lg-none">
+                        <button class="btn fw-semibold rounded-pill text-white border-0"
+                            style="font-size: 13px; background: linear-gradient(90deg, #017BFD, #0021B0); justify-self: center; padding: 5px 40px;">Upgrade
+                            to <span class="px-1 rounded-2"
+                                style="background-color: white; color: #0021B0; font-size: 10px;">PRO</span></button>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#"><img src="images/imgi_105_apple-app-store-button.svg" alt="" width="120px"></a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#"><img src="images/imgi_106_google-play-button.svg" alt="" width="120px"></a>
+                    </li>
+                    <li class="nav-item dropdown d-block d-lg-none">
+                        <a class="nav-link dropdown-toggle fw-semibold mb-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 12px !important;">
+                            More on Behance
+                            <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="px-2" style="font-size: 11px;">Careers at Behance</li>
+                            <li class="mt-2 px-2" style="font-size: 11px;">About Behance</li>
+                            <li class="mt-2 px-2" style="font-size: 11px;">Adobe Portfolio</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">English</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">TOU</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Privacy</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Community</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Help</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Cookie Preferences</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Don't sell or share my <br>personal information</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark"><img src="images/imgi_132_default.png" alt="" width="80px"></a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Got to adobe.com</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Get Adobe Express free</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-2 navIcons flex-row flex-lg-row">
+                <li class="nav-item d-none d-lg-flex drip">
+                    <button class="btn rounded-pill fw-medium px-3 border-0 text-white"
+                        style="font-size: 13px; background: linear-gradient(90deg, #017BFD, #0021B0);">Start Free
+                        Trial</button>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-flex drip">
+                    <button id="hoverModalBtn" type="button" class="btn btn-outline-dark rounded-pill fw-medium px-3"
+                        style="font-size: 13px;">
+                        Share Work
+                    </button>
+                    <ul class="dropdown-menu"
+                        style=" position: absolute; left: 0%; right: auto; transform: translate(-35%, 22%);">
+                        <li>
+                            <div class="modal-content d-flex justify-content-center align-items-center"
+                                style="width: 350px; height: 160px;">
+                                <div class="px-2 rounded-1 d-flex align-items-center justify-content-between px-4"
+                                    style="background-color: #DEE8FF; height: 60px; width: 310px;">
+                                    <div class="d-flex gap-5">
+                                        <img src="images/streamline-ultimate--paper-write.svg" alt="">
+                                        <div class="">
+                                            <p class="fw-semibold mb-0" style="font-size: 15px; color: #2C74FF;">
+                                                Project</p>
+                                            <p class="fw-semibold mb-0" style="font-size: 10px; color: #2C74FF;">
+                                                Build a complete case
+                                                study</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/ep--right.svg" alt="">
+                                </div>
+                                <div class="px-2 rounded-1 d-flex align-items-center justify-content-between px-4 mt-2"
+                                    style="background-color: #DEE8FF; height: 60px; width: 310px;">
+                                    <div class="d-flex gap-5">
+                                        <img src="images/hugeicons--new-job.svg" alt="">
+                                        <div class="">
+                                            <p class="fw-semibold mb-0" style="font-size: 15px; color: #2C74FF;">
+                                                Service</p>
+                                            <p class="fw-semibold mb-0" style="font-size: 10px; color: #2C74FF;">
+                                                Showcase you freelance
+                                                offerings</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/ep--right.svg" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown drip">
+                    <a href="#"><img src="images/imgi_20_default.png" alt="" width="16px"></a>
+
+                    <ul class="dropdown-menu"
+                        style=" position: absolute; left: 0%; right: auto; transform: translate(-84%, 2%);">
+                        <li>
+                            <div class="py-2"
+                                style="width: 350px; height: 400px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                                <p class="fw-bold m-0" style="font-size: 16px;">Your Messages</p>
+                                <hr class="w-100 m-0">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <p class="fw-semibold mb-0" style="color: #2C74FF; font-size: 13px;">Compose</p>
+                                    <hr class="m-0" style="height: 20px; width: 1px; background-color: #2C74FF;">
+                                    <p class="fw-semibold mb-0" style="color: #2C74FF; font-size: 13px;">View All
+                                    </p>
+                                </div>
+                                <hr class="w-100 m-0">
+                                <p class="fw-semibold mt-5" style="font-size: 13px;">You dont have any Messages</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown drip">
+                    <a href="#"><img src="images/imgi_21_default.png" alt="" width="15px"></a>
+                    <ul class="dropdown-menu"
+                        style=" position: absolute; left: 0%; right: auto; transform: translate(-84%, 5%);">
+                        <li>
+                            <div class="py-2"
+                                style="width: 350px; height: 200px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                                <p class="fw-bold m-0" style="font-size: 16px;">Your Notifications</p>
+                                <hr class="w-100 m-0">
+                                <p class="mt-5" style="font-size: 11px;">You have no new notifications</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-flex drip">
+                    <a href="#">
+                        <div class="rounded-pill"
+                            style="width: 30px; height: 30px; background-image: url(images/imgi_1_230.png); background-size: cover; background-position: center;">
+                        </div>
+                        <ul class="dropdown-menu"
+                            style=" position: absolute; left: 0%; right: auto; transform: translate(-84%, 1%);">
+                            <li>
+                                <div class="py-2"
+                                    style="width: 300px; max-height: 450px; display: flex; flex-direction: column; gap: 10px; display: grid; overflow-y: scroll;">
+                                    <div class="rounded-pill"
+                                        style="background-image: url(images/imgi_1_230.png); width: 80px; height: 80px; background-size: cover; background-position: center; justify-self: center;">
+                                    </div>
+                                    <p class="fw-bold mb-0" style="font-size: 15px; justify-self: center;">Ajayi
+                                        Obaloluwa</p>
+                                    <p class="mb-0" style="font-size: 11px; justify-self: center;">
+                                        obaloluwaajayi2006@gmail.com</p>
+                                    <button class="btn fw-semibold rounded-pill px-4 text-white border-0"
+                                        style="font-size: 13px; background: linear-gradient(90deg, #017BFD, #0021B0); justify-self: center;">Upgrade
+                                        to <span class="px-1 rounded-2"
+                                            style="background-color: white; color: #0021B0; font-size: 10px;">PRO</span></button>
+                                    <hr class="w-100 m-0">
+                                    <p class="ms-4 mb-0" style="font-size: 12px;">View as: Creative</p>
+                                    <div class="mx-4 d-flex justify-content-between">
+                                        <p class="fw-semibold mb-0 d-flex align-items-center gap-2"
+                                            style="font-size: 14px;">
+                                            <img src="images/iconoir--profile-circle.svg" alt="" width="20px">
+                                            Switch to Hirer
+                                        </p>
+                                        <img src="images/material-symbols-light--navigate-next.svg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0">
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Edit My Availability
+                                    </p>
+                                    <p class="ms-4 mb-0" style="font-size: 12px;">Freelance (Available Now)</p>
+                                    <hr class="w-100 m-0">
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Behance Profile</p>
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Adobe Portfolio</p>
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Stats & Insights</p>
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Manage Freelance
+                                        Projects</p>
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Purchases</p>
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Services</p>
+                                    <hr class="w-100 m-0">
+                                    <p class="mx-4 mb-0 fw-semibold d-flex align-items-center justify-content-between"
+                                        style="font-size: 14px;">Manage Adobe ID
+                                        <img src="images/fluent--share-20-regular.svg" alt="">
+                                    </p>
+                                    <p class="mx-4 mb-0 fw-semibold d-flex align-items-center justify-content-between"
+                                        style="font-size: 14px;">Help
+                                        <img src="images/fluent--share-20-regular.svg" alt="">
+                                    </p>
+                                    <hr class="w-100 m-0">
+                                    <p class="ms-4 mb-0 fw-semibold" style="font-size: 14px;">Sign Out</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-flex drip">
+                    <a href="#"><img src="images/imgi_132_default.png" alt="" width="60px"></a>
+                    <ul class="dropdown-menu"
+                        style=" position: absolute; left: 0%; right: auto; transform: translate(-84%, 13%);">
+                        <li>
+                            <div class="modal-content d-flex justify-content-center align-items-center"
+                                style="width: 400px; height: 250px;">
+                                <div class="rounded-1 d-flex align-items-center justify-content-between px-4"
+                                    style="background-color: #DEE8FF; height: 60px; width: 380px;">
+                                    <div class="d-flex gap-3">
+                                        <img src="images/logos--adobe-icon.svg" alt="">
+                                        <div class="">
+                                            <p class="fw-bold mb-0" style="font-size: 15px; color: #2C74FF;">
+                                                Go to Adobe.com</p>
+                                            <p class="mb-0" style="font-size: 10px; color: #2C74FF;">
+                                                Aceess your apps, files, services & more</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/ep--right.svg" alt="">
+                                </div>
+                                <div class="rounded-1 d-flex align-items-center justify-content-between px-4 mt-2"
+                                    style="background-color: #DEE8FF; height: 60px; width: 380px;">
+                                    <div class="d-flex gap-3">
+                                        <img src="images/Adobe-Express-Icon-PNG.png" alt=""
+                                            style="width: 35px; height: 35px;">
+                                        <div class="">
+                                            <p class="fw-bold mb-0" style="font-size: 15px; color: #2C74FF;">
+                                                Get Adobe Express Free</p>
+                                            <p class="mb-0" style="font-size: 10px; color: #2C74FF;">
+                                                Quickly make content from thousands of free templates</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/ep--right.svg" alt="">
+                                </div>
+                                <div class="rounded-1 d-flex align-items-center justify-content-between px-4 mt-2"
+                                    style="background-color: #DEE8FF; height: 60px; width: 380px;">
+                                    <div class="d-flex gap-3">
+                                        <img src="images/pngwing.com.png" alt="" style="width: 40px; height: 40px;">
+                                        <div class="">
+                                            <p class="fw-bold mb-0" style="font-size: 15px; color: #2C74FF;">
+                                                30-day Free Trial of Adobe Stock</p>
+                                            <p class="mb-0" style="font-size: 10px; color: #2C74FF;">
+                                                835M+ assets, plus edit with ease using generative AI</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/ep--right.svg" alt="">
+                                </div>
+                                <div class="rounded-1 d-flex align-items-center justify-content-between px-4 mt-2"
+                                    style="background-color: #DEE8FF; height: 60px; width: 380px;">
+                                    <div class="d-flex gap-3">
+                                        <img src="images/ri--behance-fill.svg" alt="">
+                                        <div class="">
+                                            <p class="fw-bold mb-0" style="font-size: 15px; color: #2C74FF;">
+                                                7 day free trail of Behance Pro</p>
+                                            <p class="mb-0" style="font-size: 10px; color: #2C74FF;">
+                                                Super charge your creative career with Behance pro</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/ep--right.svg" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dark Overlay -->
+    <div id="overlay"></div>
+    <hr class="w-100 m-0">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const collapseEl = document.getElementById('navbarSupportedContent');
+        const closeBtn = document.getElementById('closeNavbar');
+        const overlay = document.getElementById('overlay');
+
+        // When collapse opens
+        collapseEl.addEventListener('show.bs.collapse', () => {
+            overlay.classList.add('active');
+        });
+
+        // When collapse hides
+        collapseEl.addEventListener('hide.bs.collapse', () => {
+            overlay.classList.remove('active');
+        });
+
+        // Close navbar when clicking × button
+        closeBtn.addEventListener('click', () => {
+            const collapse = bootstrap.Collapse.getInstance(collapseEl);
+            collapse.hide();
+        });
+
+        // Also close when overlay is clicked
+        overlay.addEventListener('click', () => {
+            const collapse = bootstrap.Collapse.getInstance(collapseEl);
+            collapse.hide();
+        });
+    </script>
+
+</body>
+
+</html>
