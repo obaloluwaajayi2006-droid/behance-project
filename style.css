@@ -92,7 +92,8 @@ input::placeholder {
 
 .hero {
     background: linear-gradient(#fff, #FAFCFF);
-    height: 85vh;
+    padding: 50px 0;
+    height: auto;
 }
 
 .box {
@@ -113,6 +114,37 @@ input::placeholder {
 
 .categories div:hover img {
     display: flex !important;
+}
+
+.freelancerCards {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+}
+
+.freelancerCards .card {
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.freelancerCards .card:hover {
+    animation: freeCards .2s ease forwards;
+}
+
+@keyframes freeCards {
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+.workCard .card:hover {
+    border: 1px solid blue;
+}
+
+.workCard .card:hover p:first-child {
+    color: blue;
 }
 
 /* Make Bootstrap navbar collapse slide in from the left */
@@ -225,7 +257,19 @@ input::placeholder {
         align-items: center;
     }
 
-    .whyHire h6{
+    .whyHire h6 {
         text-align: center;
+    }
+
+    .ourFreelancers P {
+        text-align: center;
+    }
+    
+    .freeHeading {
+        font-size: 2rem !important;
+    }
+
+    .workCard .card {
+        margin-top: 12px;
     }
 }
