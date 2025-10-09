@@ -147,6 +147,14 @@ input::placeholder {
     color: blue;
 }
 
+.hireCard .card {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: none !important;
+    outline: none !important;
+    color: white;
+}
+
 /* Make Bootstrap navbar collapse slide in from the left */
 @media (max-width: 992px) {
     .navbar-collapse {
@@ -264,7 +272,7 @@ input::placeholder {
     .ourFreelancers P {
         text-align: center;
     }
-    
+
     .freeHeading {
         font-size: 2rem !important;
     }
@@ -279,5 +287,17 @@ input::placeholder {
 
     .hiring {
         padding: 50px 30px !important;
+    }
+
+    .hireCard .card {
+        margin-top: 12px;
+    }
+
+    .hireBtn {
+        flex-direction: column !important;
+    }
+
+    .hireBtn button:first-child {
+        padding: 5px 52px !important;
     }
 }
