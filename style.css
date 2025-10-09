@@ -1,3 +1,7 @@
+.navbar {
+    background-color: white;
+}
+
 .drip:hover .dropdown-menu {
     display: block !important;
     animation: ease;
@@ -47,6 +51,68 @@
 #overlay.active {
     visibility: visible;
     opacity: 1;
+}
+
+.hireScroll {
+    justify-content: center;
+}
+
+.hireScroll a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.hireScroll a:nth-child(3) {
+    background-color: #F5F8FF;
+}
+
+.hireScroll a:hover {
+    padding: 5px 20px;
+    background-color: #F5F8FF;
+    border-radius: 20px;
+    color: black;
+}
+
+
+.hireScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hireDrop:hover .dropdown-menu {
+    display: flex !important;
+}
+
+input::placeholder {
+    color: blue;
+    font-size: 14px !important;
+    opacity: .4;
+}
+
+.hero {
+    background: linear-gradient(#fff, #FAFCFF);
+    height: 85vh;
+}
+
+.box {
+    width: 250px;
+    height: 200px;
+    background-color: black;
+}
+
+.categories div {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+}
+
+.categories div:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.03);
+}
+
+.categories div:hover img {
+    display: flex !important;
 }
 
 /* Make Bootstrap navbar collapse slide in from the left */
@@ -113,5 +179,53 @@
 
     .drop1 {
         position: relative !important;
+    }
+
+    .hireScroll {
+        justify-content: start;
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding: 0 50px;
+    }
+
+    .hero p {
+        font-size: 2.6rem !important;
+    }
+
+    .hero p br {
+        display: none;
+    }
+
+    .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: 50px !important;
+        width: fit-content !important;
+        overflow-x: auto !important;
+        scrollbar-width: none !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+
+    .box {
+        width: 200px !important;
+        height: 150px !important;
+    }
+
+    .categories div:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        transform: scale(1.01);
+    }
+
+    .whyHire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whyHire h6{
+        text-align: center;
     }
 }

@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You :: Behance</title>
-
+    <title>Hire Freelance Designers :: Behance</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap Icons -->
@@ -18,7 +17,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid px-5">
             <a class="navbar-brand d-flex align-items-center justify-content-center ms-2" href="#">
                 <img src="images/ri--behance-fill.svg" alt="" width="30px">
@@ -38,7 +37,7 @@
                 </button>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center navItem">
                     <li class="nav-item">
-                        <a class="nav-link active fw-semibold fs-6 mb-0" href="#">Explore</a>
+                        <a class="nav-link fw-semibold fs-6 mb-0" href="#">Explore</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold fs-6 mb-0" href="#">Jobs</a>
@@ -67,12 +66,13 @@
                     <li class="nav-item d-none d-lg-flex">
                         <hr class="mx-3" style="width: 1px; height: 20px; background-color: black;">
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0 hireDrop" href="hire.html" role="button" aria-expanded="false">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle fw-semibold fs-6 mb-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Hire
                             <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
                         </a>
-                        <ul class="drop-2 d-none dropdown-menu"
+                        <ul class="dropdown-menu drop-1"
                             style="width: 220px; position: absolute; left: 0%; right: auto; transform: translateX(-35%);">
                             <li><a class="dropdown-item fw-medium py-2 d-flex gap-2" href="#" style="font-size: 14px;">
                                     <img src="images/hugeicons--job-search.svg" alt="" width="15px"> Hiring
@@ -181,44 +181,50 @@
                         </ul>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">English</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">English</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
                         <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">TOU</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Privacy</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">Privacy</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Community</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">Community</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Help</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">Help</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Cookie Preferences</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Cookie
+                            Preferences</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Don't sell or share my <br>personal information</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Don't
+                            sell or share my <br>personal information</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
                         <a href="#" class="text-dark"><img src="images/imgi_132_default.png" alt="" width="80px"></a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Got to adobe.com</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Got to
+                            adobe.com</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Get Adobe Express free</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Get
+                            Adobe Express free</a>
                     </li>
                 </ul>
             </div>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-2 navIcons flex-row flex-lg-row">
                 <li class="nav-item d-none d-lg-flex drip">
-                    <a href="#">
-                        <button class="btn rounded-pill fw-medium px-3 border-0 text-white"
+                    <button class="btn rounded-pill fw-medium px-3 border-0 text-white"
                         style="font-size: 13px; background: linear-gradient(90deg, #017BFD, #0021B0);">Start Free
                         Trial</button>
-                    </a>
                 </li>
                 <li class="nav-item dropdown d-none d-lg-flex drip">
                     <button id="hoverModalBtn" type="button" class="btn btn-outline-dark rounded-pill fw-medium px-3"
@@ -429,12 +435,146 @@
     <div id="overlay"></div>
     <hr class="w-100 m-0">
 
+    <!-- Hiring on Behance -->
+    <div class="align-items-center d-flex hireScroll bg-white"
+        style="height: 40px; max-width: 100%; overflow: scroll; white-space: nowrap; gap: 20px; top: 60px;">
+        <a class="fw-medium gap-2 d-flex align-items-center" href="#" style="font-size: 14px;">
+            <img src="images/hugeicons--job-search.svg" alt="" width="15px"> Hiring
+            Dashboard
+        </a>
+        <a class="fw-medium gap-2 d-flex align-items-center" href="#" style="font-size: 14px;">
+            <img src="images/material-symbols-light--search.svg" alt="" width="15px">
+            Freelancers
+        </a>
+        <a class="fw-medium gap-2 d-flex align-items-center" href="#" style="font-size: 14px;">
+            <img src="images/akar-icons--info.svg" alt="" width="15px"> Hiring On Behance
+        </a>
+        <a class="fw-medium gap-2 d-flex align-items-center" href="#" style="font-size: 14px;">
+            <img src="images/gala--add.svg" alt="" width="15px"> Create New Job
+        </a></li>
+    </div>
+
+    <hr class="w-100 m-0">
+
+    <!-- Hire page Hero Section -->
+    <div class="w-100 hero justify-content-center" style="display: flex; flex-direction: column; align-items: center;">
+        <p class="fw-bold text-center mb-0" style="font-size: 4rem;">Hire The World’s Best <br>Freelancers on Behance
+        </p>
+        <h6 class="fs-6 text-center fw-normal mt-2">Skip the search. Get instant AI-powered matches. <a href=""
+                class="text-dark">Adobe Generative AI Terms</a></h6>
+        <form action="" role="search"
+            class="d-none d-lg-flex position-relative rounded-pill border-1 border-primary shadow px-2 align-items-center bg-white mt-2"
+            style="width: 55%; padding: 5px 0;">
+            <div class="px-3 py-2 bg-light" style="border-radius: 25px 8px 8px 25px;">
+                <p class="fs-6 mb-0 text-primary">I'm looking for</p>
+            </div>
+            <input class="border-0 ms-2 text-primary" type="text" style="width: 60%; outline: none;"
+                placeholder="an illustration for my pet food company, budget $800">
+            <button class="rounded-pill border-0 ms-auto d-flex align-items-center"
+                style="width: 40px; height: 40px; background: linear-gradient(90deg, #2C74FF, #0021B0);"><img
+                    src="images/ic--round-navigate-next.svg" alt="" width="30px"></button>
+        </form>
+        <form action="" class="d-flex d-lg-none gap-2 mt-2" style="flex-direction: column; width: 100% !important;">
+            <p class="mb-0 fw-medium" style="font-size: 12px !important;">I'm looking for</p>
+            <input type="text" placeholder="an illustrator for my pet food company, budget of $800"
+                style="height: 70px; border: 1px solid blue; border-radius: 10px;">
+            <button class="btn btn-primary rounded-5">Create my project</button>
+        </form>
+        <p class="mt-4 text-center" style="font-size: 12px !important;">By using Behance, you are agreeing to the Adobe
+            <a href="" class="text-dark">Terms of Use</a> and <a href="" class="text-dark">Privacy Policy</a>
+        </p>
+    </div>
+
+    <!-- Categories -->
+    <div class="py-4 d-flex justify-content-center align-items-center" style="height: auto; background-color: #F7FAFF; flex-direction: column;">    
+        <div class="container-fluid row gap-2 d-flex align-items-center w-100 justify-content-lg-center px-5 categories">
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_254_hire-landing-graphic-design.png); background-size: cover; background-position: center;">
+                <p class="fw-bold fs-6 text-white">Graphic Design</p>
+                <img src="images/imgi_270_avatars-graphic-design.png" alt="" width="100px" class="d-none">
+            </div>
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_256_hire-landing-cat-logo-design.png); background-size: cover; background-position: center">
+                <p class="fw-bold fs-6 text-white">Logo Design</p>
+                <img src="images/imgi_271_avatars-logo-design.png" alt="" width="100px" class="d-none">
+            </div>
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_258_hire-landing-cat-branding.png); background-size: cover; background-position: center">
+                <p class="fw-bold fs-6 text-white">Branding Services</p>
+                <img src="images/imgi_272_avatars-branding-services.png" alt="" width="100px" class="d-none">
+            </div>
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_260_hire-landing-cat-web.png); background-size: cover; background-position: center">
+                <p class="fw-bold fs-6 text-white">Website Design</p>
+                <img src="images/imgi_273_avatars-website-design.png" alt="" width="100px" class="d-none">
+            </div>
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_262_hire-landing-cat-social.png); background-size: cover; background-position: center">
+                <p class="fw-bold fs-6 text-white">Social Media Design</p>
+                <img src="images/imgi_274_avatars-social-media-design.png" alt="" width="100px" class="d-none">
+            </div>
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_264_hire-landing-cat-illustration.png); background-size: cover; background-position: center; background-color: rgb(5, 0, 34, 0.5); background-blend-mode: overlay">
+                <p class="fw-bold fs-6 text-white">Illustrations</p>
+                <img src="images/imgi_275_avatars-illustrations.png" alt="" width="100px" class="d-none">
+            </div>
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_266_hire-landing-cat-architecture.png); background-size: cover; background-position: center">
+                <p class="fw-bold fs-6 text-white text-center">Anterior & Interior Design</p>
+                <img src="images/imgi_276_avatars-architecture-interior-design.png" alt="" width="100px" class="d-none text">
+            </div>
+            <div class="rounded-3 col-1-5 col-lg-3 box d-flex align-items-center justify-content-center" style="flex-direction: column; width: 250px; height: 200px; background-image: url(images/imgi_268_hire-landing-cat-uiux.png); background-size: cover; background-position: center">
+                <p class="fw-bold fs-6 text-white">UI/UX Design</p>
+                <img src="images/imgi_277_avatars-ui-ux-design.png" alt="" width="100px" class="d-none">
+            </div>
+        </div>
+        <button class="btn bg-white fw-semibold px-4 py-2 rounded-pill mt-3">Browse All Categories</button>
+    </div>
+
+    <!-- Why hire on behance -->
+    <div class="d-lg-flex w-100 align-items-center justify-content-center vh-auto py-3 gap-5 px-3" style="background-color: #F7FAFF;">
+        <div class="whyHire">
+            <h6 class="fw-bold mb-1" style="font-size: 40px;">Why hire on Behance?</h6>
+            <h6 class="mb-1 fw-normal" style="font-size: 17px !important;">Hiring freelance talent on Behance is seamless and secure.</h6>
+            <div class="d-flex align-items-center mt-3 gap-2">
+                <img src="images/imgi_226_default.png" alt="" width="30px">
+                <div>
+                    <p class="mb-0 fw-medium text-black" style="font-size: 15px;">Access to the world’s best creators</p>
+                    <p class="mb-0 text-dark" style="font-size: 15px;">Get matched from a pool of over 2 million qualified freelancers</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mt-3 gap-2">
+                <img src="images/imgi_227_default.png" alt="" width="30px">
+                <div>
+                    <p class="mb-0 fw-medium text-black" style="font-size: 15px;">All the right tools in one place</p>
+                    <p class="mb-0 text-dark" style="font-size: 15px;">Start conversations, share files, and join video calls with candidates</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mt-3 gap-2">
+                <img src="images/imgi_241_default.png" alt="" width="30px">
+                <div>
+                    <p class="mb-0 fw-medium text-black" style="font-size: 15px;">Secure payments</p>
+                    <p class="mb-0 text-dark" style="font-size: 15px;">Pay seamlessly and securely with a debit or credit card on Behance</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mt-3 gap-2">
+                <span class="px-1 rounded-2 text-white" style="background: linear-gradient(90deg, #2C74FF, #0021B0); font-size: 10px;">PRO</span>
+                <div>
+                    <p class="mb-0 fw-medium text-black" style="font-size: 15px;">No platform fee with Behance Pro</p>
+                    <p class="mb-0 text-dark" style="font-size: 15px;">Platform fees are waived for freelancers with Behance Pro</p>
+                </div>
+            </div>
+            <div class="d-flex mt-3 gap-2">
+                <button class="btn bg-primary fw-bold rounded-pill px-4 text-white">Get Started</button>
+                <button class="btn bg-white fw-bold rounded-pill px-4">Browse Freelancers</button>
+            </div>
+        </div>
+        <img src="images/imgi_11_hire-landing-why.1x.png " alt="" class="d-none d-lg-flex">
+    </div>
+
+    <!-- Our Freelancers -->
+    <div class="w-100 vh-auto">
+         
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         crossorigin="anonymous"></script>
-
     <script>
         const collapseEl = document.getElementById('navbarSupportedContent');
         const closeBtn = document.getElementById('closeNavbar');
@@ -462,7 +602,6 @@
             collapse.hide();
         });
     </script>
-
 </body>
 
 </html>
