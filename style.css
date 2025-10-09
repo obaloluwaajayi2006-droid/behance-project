@@ -234,8 +234,9 @@ input::placeholder {
     }
 
     .hireScroll {
-        justify-content: start;
+        justify-content: center !important;
         padding: 0 20px;
+        align-items: start !important;
     }
 
     .hero {

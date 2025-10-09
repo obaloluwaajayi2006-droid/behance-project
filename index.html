@@ -18,7 +18,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg position-sticky top-0">
         <div class="container-fluid px-5">
             <a class="navbar-brand d-flex align-items-center justify-content-center ms-2" href="#">
                 <img src="images/ri--behance-fill.svg" alt="" width="30px">
@@ -68,7 +68,8 @@
                         <hr class="mx-3" style="width: 1px; height: 20px; background-color: black;">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0 hireDrop" href="hire.html" role="button" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0 hireDrop" href="hire.html"
+                            role="button" aria-expanded="false">
                             Hire
                             <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
                         </a>
@@ -181,34 +182,42 @@
                         </ul>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">English</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">English</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
                         <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">TOU</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Privacy</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">Privacy</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Community</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">Community</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Help</a>
+                        <a href="#" class="text-dark"
+                            style="font-size: 12px !important; text-decoration: none;">Help</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Cookie Preferences</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Cookie
+                            Preferences</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Don't sell or share my <br>personal information</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Don't
+                            sell or share my <br>personal information</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
                         <a href="#" class="text-dark"><img src="images/imgi_132_default.png" alt="" width="80px"></a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Got to adobe.com</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Got to
+                            adobe.com</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Get Adobe Express free</a>
+                        <a href="#" class="text-dark" style="font-size: 12px !important; text-decoration: none;">Get
+                            Adobe Express free</a>
                     </li>
                 </ul>
             </div>
@@ -216,8 +225,8 @@
                 <li class="nav-item d-none d-lg-flex drip">
                     <a href="#">
                         <button class="btn rounded-pill fw-medium px-3 border-0 text-white"
-                        style="font-size: 13px; background: linear-gradient(90deg, #017BFD, #0021B0);">Start Free
-                        Trial</button>
+                            style="font-size: 13px; background: linear-gradient(90deg, #017BFD, #0021B0);">Start Free
+                            Trial</button>
                     </a>
                 </li>
                 <li class="nav-item dropdown d-none d-lg-flex drip">
@@ -423,11 +432,12 @@
                 </li>
             </ul>
         </div>
+        <!-- Dark Overlay on navbar toggle-->
+        <div id="overlay"></div>
+        <hr class="w-100 m-0">
     </nav>
 
-    <!-- Dark Overlay on navbar toggle-->
-    <div id="overlay"></div>
-    <hr class="w-100 m-0">
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
