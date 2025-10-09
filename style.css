@@ -272,4 +272,12 @@ input::placeholder {
     .workCard .card {
         margin-top: 12px;
     }
+
+    .success p {
+        text-align: center;
+    }
+
+    .hiring {
+        padding: 50px 30px !important;
+    }
 }
