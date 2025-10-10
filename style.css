@@ -389,18 +389,14 @@ input::placeholder {
         padding: 20px 0 !important;
         gap: 0px !important;
     }
+}
 
-    /* .exploreHome .exploreImg {
-        width: 21rem !important;
+@media (max-width: 550px) {
+    .exploreHome .exploreImg {
+        width: 85vw !important;
     }
 
     .exploreHome .exploreImg .rounded-2 {
-        width: 21rem !important;
-        height: 18rem !important;
+        width: 85vw !important;
     }
-
-    .exploreHome .exploreImg .exploreText {
-        justify-content: space-between !important;
-    } */
-    */
 }

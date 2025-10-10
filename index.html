@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For You :: Behance</title>
-
+    <link rel="icon" href="images/devicon--behance.svg" type="image/png">
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap Icons -->
@@ -38,16 +38,18 @@
                         &times;
                     </button>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center navItem">
-                        <li class="nav-item">
+                        <li class="nav-item" style="display: flex; flex-direction: column; align-items: center;">
                             <a class="nav-link active fw-semibold fs-6 mb-0" href="#">Explore</a>
+                            <div class="indicator" style="width: 55px; height: 2px; background-color: black;">
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" style="display: flex; flex-direction: column; align-items: center;">
                             <a class="nav-link fw-semibold fs-6 mb-0" href="#">Jobs</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item" style="display: flex; flex-direction: column; align-items: center;">
                             <a class="nav-link fw-semibold fs-6 mb-0" href="#">Client Work</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown"
+                            style="display: flex; flex-direction: column; align-items: center;">
                             <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
@@ -70,7 +72,7 @@
                         <li class="nav-item d-none d-lg-flex">
                             <hr class="mx-3" style="width: 1px; height: 20px; background-color: black;">
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" style="display: flex; flex-direction: column; align-items: center;">
                             <a class="nav-link dropdown-toggle fw-semibold fs-6 mb-0 hireDrop" href="hire.html"
                                 role="button" aria-expanded="false">
                                 Hire
@@ -454,13 +456,12 @@
 
         <!-- Dark Overlay on navbar toggle-->
         <div id="overlay"></div>
-        <hr class="w-100 m-0">
+        <hr class="w-100 m-0" style="margin-top: -13px !important;">
 
         <!-- Navbar Search -->
-        <div class="d-flex justify-content-between w-100 px-4 gap-2 navbarSearch"
+        <div class="d-flex justify-content-between w-100 px-4 gap-2 navbarSearch mt-2"
             style="height: 50px; align-items: center !important; justify-content: center !important;">
-            <button
-                class="btn btn-outline-dark d-none d-lg-flex align-items-center gap-2 px-4 py-1 rounded-pill mb-0 py-0"
+            <button class="btn btn-outline-dark d-none d-lg-flex align-items-center gap-2 px-4 py-1 rounded-pill mb-0"
                 style="font-size: 15px !important; font-weight: 500 !important; padding: 5px 15px !important; height: 35px;">
                 <img src="images/imgi_139_default.png" alt="" width="15px"> Filter
             </button>
@@ -610,13 +611,38 @@
     </div>
 
     <!-- Homepage -->
-    <div class="px-2 row gap-2 d-flex align-items-center vh-auto py-4 exploreHome w-100"
-        style="justify-content: center !important; overflow-x: hidden;">
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center  exploreText">
+    <div class="px-2 row gap-4 d-flex align-items-center vh-auto py-4 exploreHome w-100"
+        style="justify-content: center !important;">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_194_2b3398234633893.Y3JvcCwxMDgwLDg0NCwwLDQy.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_21_maria.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Estudio Alibino</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">642</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">5.1K</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_202_7e8e78198943557.Y3JvcCw4MDgsNjMyLDAsMA.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_21_maria.webp); background-size: cover; background-position: center;">
+                    </div>
                     <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
                 </div>
                 <div class="d-flex gap-2">
@@ -627,11 +653,156 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_204_69026d209116567.Y3JvcCwyMDY0LDE2MTUsNSww.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_21_maria.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">11</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">45</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_218_e6ef57233353887.Y3JvcCwxNTQ5LDEyMTIsMzQsMA.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_21_maria.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Mykola Chernega</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">14</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">66</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_243_9b2b08236242983.Y3JvcCwxMzgwLDEwODAsNzUsMA.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_21_maria.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Victoria Rys</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">700</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">7.2K</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_364_e6ea4c235961175.Y3JvcCwxNTM0LDEyMDAsNjQsMA.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_15_kate.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">3.1K</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">30.9K</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_438_2a0e47235939679.Y3JvcCwxMTUwLDkwMCwxMjUsMA.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_19_tiago.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">141</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">606</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg/imgi_66_e6ea4c235961175.Y3JvcCwxNTM0LDEyMDAsNjQsMA.png); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_18_alexandra.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Julia Johnson</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">121</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">1.9K</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_10_pro_customize_profile.webp); background-size: cover; background-position: center;">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/francisco-rivero.webp); background-size: cover; background-position: center;">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Vitalii Tesliuk</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_156_default1.png" alt="">881</p>
+                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
+                            src="images/imgi_157_default.png" alt="">11.1K</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_254_hire-landing-graphic-design.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/Ilya-chidyakin.webp); background-size: cover; background-position: center">
+                    </div>
                     <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
                 </div>
                 <div class="d-flex gap-2">
@@ -642,373 +813,391 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_256_hire-landing-cat-logo-design.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/caitlin-jessica-foster.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Joao Crescioni</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">811</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">6.1K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_258_hire-landing-cat-branding.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_13_harbor.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">1.1K</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">7.7K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_260_hire-landing-cat-web.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_14_danny.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Loonatiks Design Crew</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">616</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">5.9K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_262_hire-landing-cat-social.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_17_ulysses.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Unburden Studio</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">2.4K</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">23.4K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_264_hire-landing-cat-illustration.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_16_silverstag.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Mubashira Rauf Khan</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">0</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">1</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_266_hire-landing-cat-architecture.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_20_dirty.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">1.8K</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">18.7K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_268_hire-landing-cat-uiux.png); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_15_kate.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Ritika Sharma</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">59</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">497</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_3_pro_boost_projects.webp); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_22_chloe.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Max Gener</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">3.3K</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">30.4K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_4_pro_traffic_sources.webp); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_19_tiago.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Favor Design</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">3.6K</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">36.2K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_5_pro_scheduled_publish.webp); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/imgi_14_danny.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Tendrill Studio</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">921</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">7.5K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_6_pro_pricing_chart.webp); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/mariah-fabe.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Sadikul Islam</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">28</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">175</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_7_pro_exclusive_freelance_jobs.webp); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/karina-h.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">451</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">1.6K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_8_pro_zero_fees.webp); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/francisco-rivero.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">925</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">9.1K</p>
                 </div>
             </div>
         </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
+        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg"
+            style="flex-direction: column; width: 18rem; cursor: pointer;">
+            <div class="rounded-2"
+                style="width: 18rem; height: 15rem; background-image: url(images/exploreImg2/imgi_9_pro_go_dark.webp); background-size: cover; background-position: center">
+            </div>
+            <div class="d-flex align-items-center  exploreText" style="justify-content: space-between;">
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
+                    <div class="rounded-pill"
+                        style="width: 30px; height: 30px; background-image: url(images/caitlin-jessica-foster.webp); background-size: cover; background-position: center">
+                    </div>
+                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Multiple Owners</p>
                 </div>
                 <div class="d-flex gap-2">
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
+                            src="images/imgi_156_default1.png" alt="">1.8K</p>
                     <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
+                            src="images/imgi_157_default.png" alt="">18.8K</p>
                 </div>
             </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex gap-2 col-1-5 col-lg-3 exploreImg" style="flex-direction: column; width: 18rem !important;">
-            <div class="rounded-2" style="width: 18rem; height: 16rem; background-color: black;"></div>
-            <div class="d-flex justify-content-between align-items-center gap-5">
-                <div class="d-flex gap-2 align-items-center">
-                    <div class="rounded-pill" style="width: 30px; height: 30px; background-color: black;"></div>
-                    <p class="mb-0 fw-semibold" style="font-size: 14px;">584 Studio</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_156_default1.png" alt="">421</p>
-                    <p class="mb-0 d-flex align-items-center gap-1" style="font-size: 12px; color: grey;"><img
-                            src="images/imgi_157_default.png" alt="">2.7K</p>
-                </div>
-            </div>
+
         </div>
     </div>
 
+    <!-- Explore Footer -->
+    <div class="d-lg-flex d-none justify-content-between vh-auto py-2 px-5 align-items-center position-sticky bottom-0"
+        style="background-color: white;">
+        <ul class="d-flex align-items-center gap-3 flex-wrap mb-0" style=" list-style:
+            none; align-items: center !important; justify-content: center !important;">
+            <li>
+                <div class="nav-item dropdown d-none d-lg-flex">
+                    <a class="nav-link dropdown-toggle text-dark fw-semibold text-decoration-none" href="#"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="font-size: 13px !important;"> More Behance
+                        <i class="bi bi-chevron-down ms-1 fw-bolder" style="font-size: 12px !important;"></i>
+                    </a>
+                    <ul class="dropdown-menu drop-1"
+                        style="position: absolute; left: 0%; right: auto; transform: translateX(-20%);">
+                        <li><a class="dropdown-item px-4 py-2" href="#" style="font-size: 14px;">Careers at
+                                Behance</a>
+                        </li>
+                        <li><a class="dropdown-item px-4 py-2" href="#" style="font-size: 14px;">Adobe
+                                Portfolio</a>
+                        </li>
+                        <li><a class="dropdown-item px-4 py-2" href="#" style="font-size: 14px;">Blog</a>
+                        </li>
+                        <li><a class="dropdown-item px-4 py-2" href="#" style="font-size: 14px;">Download the
+                                App</a>
+                        </li>
+                        <li><a class="dropdown-item px-4 py-2" href="#" style="font-size: 14px;">About
+                                Behance</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="" href="#">
+                    <hr class="px-0 p-0 m-0" style="background-color: black; width: 1px; height: 20px;">
+                </a></li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;"> English</a></li>
+            <li><a class="" href="#">
+                    <hr class="px-0 p-0 m-0" style="background-color: black; width: 1px; height: 20px;">
+                </a></li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;">Try Behance Pro</a>
+            </li>
+            <li><a class="" href="#">
+                    <hr class="px-0 p-0 m-0" style="background-color: black; width: 1px; height: 20px;">
+                </a></li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;">TOU</a></li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;">Privacy</a>
+            </li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;">Community</a>
+            </li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;">Help</a>
+            </li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;">Cookie
+                    Preferences</a></li>
+            <li><a href="#" class="text-dark fw-semibold text-decoration-none"
+                    style="text-align: center !important; font-size: 13px !important;">Do not sell
+                    or share my personal information</a>
+            </li>
+        </ul>
+        <img src="images/imgi_132_default.png" alt="" width="60px">
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        crossorigin="anonymous"></script>
 
-    <script>
-        const collapseEl = document.getElementById('navbarSupportedContent');
-        const closeBtn = document.getElementById('closeNavbar');
-        const overlay = document.getElementById('overlay');
-
-        // When collapse opens
-        collapseEl.addEventListener('show.bs.collapse', () => {
-            overlay.classList.add('active');
-        });
-
-        // When collapse hides
-        collapseEl.addEventListener('hide.bs.collapse', () => {
-            overlay.classList.remove('active');
-        });
-
-        // Close navbar when clicking × button
-        closeBtn.addEventListener('click', () => {
-            const collapse = bootstrap.Collapse.getInstance(collapseEl);
-            collapse.hide();
-        });
-
-        // Also close when overlay is clicked
-        overlay.addEventListener('click', () => {
-            const collapse = bootstrap.Collapse.getInstance(collapseEl);
-            collapse.hide();
-        });
-    </script>
 
 </body>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<script>
+    const collapseEl = document.getElementById('navbarSupportedContent');
+    const closeBtn = document.getElementById('closeNavbar');
+    const overlay = document.getElementById('overlay');
+
+    // When collapse opens
+    collapseEl.addEventListener('show.bs.collapse', () => {
+        overlay.classList.add('active');
+    });
+
+    // When collapse hides
+    collapseEl.addEventListener('hide.bs.collapse', () => {
+        overlay.classList.remove('active');
+    });
+
+    // Close navbar when clicking × button
+    closeBtn.addEventListener('click', () => {
+        const collapse = bootstrap.Collapse.getInstance(collapseEl);
+        collapse.hide();
+    });
+
+    // Also close when overlay is clicked
+    overlay.addEventListener('click', () => {
+        const collapse = bootstrap.Collapse.getInstance(collapseEl);
+        collapse.hide();
+    });
+</script>
 
 </html>
