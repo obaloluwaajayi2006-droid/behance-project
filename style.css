@@ -186,6 +186,16 @@ input::placeholder {
     font-size: 14px !important;
 }
 
+.navbarCat div:first-child {
+    background-blend-mode: overlay !important;
+    background-color: rgba(16, 0, 88, 0.7) !important;
+}
+
+.navbarCat div:hover {
+    background-blend-mode: overlay !important;
+    background-color: rgba(16, 0, 88, 0.7) !important;
+}
+
 /* Make Bootstrap navbar collapse slide in from the left */
 @media (max-width: 992px) {
     .navbar-collapse {
@@ -269,7 +279,7 @@ input::placeholder {
         display: none;
     }
 
-    .row {
+    .cata {
         display: flex !important;
         flex-wrap: nowrap !important;
         gap: 50px !important;
@@ -363,4 +373,34 @@ input::placeholder {
     .footer2 p {
         font-size: 11px !important;
     }
+
+    .navv .navbarSearch {
+        gap: 20px !important;
+        padding: 0 8px !important;
+    }
+
+    .navv .navbarCat {
+        padding: 20 30px !important;
+    }
+
+    .exploreHome {
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 20px 0 !important;
+        gap: 0px !important;
+    }
+
+    /* .exploreHome .exploreImg {
+        width: 21rem !important;
+    }
+
+    .exploreHome .exploreImg .rounded-2 {
+        width: 21rem !important;
+        height: 18rem !important;
+    }
+
+    .exploreHome .exploreImg .exploreText {
+        justify-content: space-between !important;
+    } */
+    */
 }
